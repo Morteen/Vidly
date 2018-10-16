@@ -15,16 +15,16 @@ namespace Vidly.Controllers
         {
             
             var movie = new Movie(){ Name="Shrek!"};
-            var custmers = new List<Customer>
+            var customers = new List<Customer>
             {
                 new Customer{ Name="Customer 1"},
                 new Customer{ Name="Customer 2"}
             };
 
-            //Lager en viewModel for å send ut iRandom viewet
+            //Lager en viewModel for å send ut i Random viewet
             var viewModel = new RandomViewModel();
             viewModel.Movie = movie;
-            viewModel.Customers = custmers;
+            viewModel.Customers = customers;
 
             return View(viewModel);
         }
